@@ -1,4 +1,4 @@
-# Fix-SoundDevices-File-Corruption
+# Fix Broadcast Wave File Corruption
 PowerShell scripts to fix files corrupted by a very specific issue.
 
 Files written by Sound Devices recorders had an incorrect FAT32 bit set. That caused Windows 10 to treat the file as EFS encrypted, and overwrite the RIFF header.
