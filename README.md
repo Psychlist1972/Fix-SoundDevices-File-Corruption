@@ -1,7 +1,9 @@
 # Fix Broadcast Wave File Corruption
 PowerShell scripts to fix files corrupted by a very specific issue.
 
-Files written by Sound Devices recorders had an incorrect FAT32 bit set. That caused Windows 10 to treat the file as EFS encrypted, and overwrite the RIFF header.
+Files written by Sound Devices recorders had an incorrect FAT32 bit set. Windows 10 introduces the Encrypting File System (EFS) for removable FAT media. The reserved bit used by Sound Devices was also used by Microsoft to indicate whether or not a file is encrypted. Together, that caused Windows 10 to treat the file as EFS encrypted, and overwrite the RIFF header, thinking it was an encryption header.
+
+(NOTE that as of this writing a fix is on its way in Windows 10. The fix does additional metadata checking before treating a file as encrypted)
 
 This script restores the first three parts of a RIFF/WAVE header:
 
