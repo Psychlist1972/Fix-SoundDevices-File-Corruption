@@ -17,6 +17,7 @@ You must already have the Windows 10 hotfix for the EFS FAT32 corruption in plac
 ## Instructions
 
 TO USE:
+
 1. Make a copy of your wav files and put them into some easily-found directory. There can be subfolders. This script will process them.
 
 2. Copy these two files (the .ps1 and .psm1) to the same directory
