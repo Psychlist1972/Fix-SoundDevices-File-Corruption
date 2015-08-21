@@ -4,9 +4,13 @@ PowerShell scripts to fix files corrupted by a very specific issue.
 Files written by Sound Devices recorders had an incorrect FAT32 bit set. That caused Windows 10 to treat the file as EFS encrypted, and overwrite the RIFF header.
 
 This script restores the first three parts of a RIFF/WAVE header:
+
      Position 0-3 "RIFF"
+     
      Position 4-7 32 bit integer with file size
+     
      Position 8-11 "WAVE"
+     
 Then, this script conditionally restores one more bit. The FMT header for a broadcast wave file, which is the file impacted here, inclues a "bext" chunk as the first chunk. The corruption appears to destroy the first two characters of that. So if we find _ _ x t then we'll replace with "bext".
 
 
