@@ -16,7 +16,7 @@ Then, this script conditionally restores one more bit. The FMT header for a broa
 
 You must already have the Windows 10 hotfix for the EFS FAT32 corruption in place to use this script. That hotfix makes the files readible by no longer treating them as encrypted.
 
-## Use at your own risk. Always backup your files before doing any sort of processing on them
+## Use at your own risk. Always backup your files before doing any sort of processing on them. This is not an official Microsoft product. It is just a tool to try to help out some folks who don't deserve to have their data lost.
 
 ## Instructions
 
