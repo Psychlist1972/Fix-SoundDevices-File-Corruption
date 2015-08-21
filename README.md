@@ -39,3 +39,7 @@ Use a Windows 10 PC, with the FAT32 EFS patch.
 7. Let the script process each file. Note any errors that come up
 
 8. Report any failures to Pete through either twitter or, preferably through the github issues/discussion for this script.
+
+## Useful tool
+
+One tool I used to debug the corruption was a great HTML5 Hex editor. You can try it here: https://hexed.it/
