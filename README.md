@@ -22,7 +22,24 @@ You must already have the Windows 10 hotfix for the EFS FAT32 corruption in plac
 
 ## Instructions
 
-TO USE:
+### Enabling scripts on your system
+
+If you're not a developer, your PC likely doesn't have scripting enabled. 
+
+This script is not digitally signed, so to run it, you'll need to set teh execution policy to unrestricted. Start PowerShell as an administrator (In Windows 10, just type "PowerShell" into the search box on the taskbar, right-click the PowerShell icon and then choose "Run as administrator"). Then, at the PowerShell prompt, type:
+
+     Set-ExecutionPolicy unrestricted
+
+That setting allows you to run any PowerShell script you click on. Obviously, this can be a security hole for some folks. So, when you've finished the cleanup, you can set PowerShell to no longer allow you to run unsigned scripts from the Internet by typing:
+
+     Set-ExecutionPolicy remotesigned
+
+Or you can simply leave it as unrestricted, if you're not the type to click on other random malicious scripts from the Internet. (I have other music-focused scripts here on GitHub, for example, which require unrestricted to run.
+
+More information here:
+https://technet.microsoft.com/en-us/library/bb613481.aspx
+
+### TO USE:
 
 Use a Windows 10 PC, with the FAT32 EFS patch.
 
