@@ -5,7 +5,7 @@ Files written by Sound Devices recorders had an incorrect FAT32 bit set. Windows
 
 (NOTE that as of this writing a fix is now available in Windows 10. The fix does additional metadata checking before treating a file as encrypted. You'll find the fix in your updates as KB3093266, released on 2015-09-30)
 
-**NOTE 2: Because the patch is now released, if you were using the workaround registry key which disabled EFS, please delete that key and reboot.**
+**NOTE 2: Because the patch is now released, if you were using the workaround registry key which disabled EFS, please delete that key and reboot. That may be done at any point after you have the KB3093266 patch installed.**
 
 This script restores the first three parts of a RIFF/WAVE header:
 
