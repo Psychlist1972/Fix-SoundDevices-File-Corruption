@@ -7,7 +7,7 @@ Files written by Sound Devices recorders had an incorrect FAT32 bit set. Windows
 
 To check your install history: Windows/Start->Settings->Update & Security->Advanced Options->View your update history, and check for KB3093266. Note that insider fast ring builds may have a different set of updates. If you want to test to be sure, create a new recording from a Sound Devices recorder, in broadcast wav format, on a blank FAT32-formatted SD or CF card. Be absolutely sure there's nothing else on that card, even in subfolders. Then mount the card in Windows 10 and give it a minute or two before opening the file in another program. If the file gets corrupted, you don't have the fix. If the file opens in an audio program without issues, then you are good to go.
 
-**NOTE 2: Because the patch is now released, if you were using the workaround registry key which disabled EFS, please delete that key and reboot. That may be done at any point after you have the KB3093266 patch installed. Leaving that key in place will likely cause problems with additional Windows 10 features in the future. **
+**NOTE 2: Because the patch is now released, if you were using the workaround registry key which disabled EFS, please delete that key and reboot. That may be done at any point after you have the KB3093266 patch installed. Leaving that key in place will likely cause problems with additional Windows 10 features in the future.**
 
 This script restores the first three parts of a RIFF/WAVE header:
 
