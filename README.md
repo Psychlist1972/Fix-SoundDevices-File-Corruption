@@ -1,7 +1,7 @@
 # Fix Broadcast Wave File Corruption
 PowerShell scripts to fix files corrupted by a very specific issue.
 
-Files written by Sound Devices recorders had an incorrect FAT32 bit set. Windows 10 introduces the Encrypting File System (EFS) for removable FAT media. The Microsoft-reserved bit used by Sound Devices was also used by Microsoft to indicate whether or not a file is encrypted. Together, that caused Windows 10 to treat the file as EFS encrypted, and overwrite the RIFF header, thinking it was an encryption header. Prior to Windows 10, Microsoft did not use this bit, so Sound Devices testing would not have revealed any problem.
+Files written by Sound Devices recorders had an incorrect FAT32 bit set. Windows 10 introduces the Encrypting File System (EFS) for removable FAT media. The Microsoft-reserved bit used by Sound Devices was also used by Microsoft to indicate whether or not a file is encrypted. Together, that caused Windows 10 to treat the file as EFS encrypted, and overwrite the RIFF header, thinking it was an encryption header. Prior to Windows 10, Microsoft did not use this reserved bit, so Sound Devices testing would not have revealed any problem.
 
 **NOTE that as of this writing a fix is now available in Windows 10.** The fix does additional metadata checking before treating a file as encrypted. You'll find the fix in your updates as KB3093266, released on 2015-09-30. Be sure to check your update history for a successful install of this patch before attempting to load any Sound Devices FAT32-formatted cards.
 
